@@ -19,6 +19,13 @@ header .logo {
     font-weight: bold;
 }
 
+header .logoD{
+        width: 300px;
+        height: 50%;
+        margin-bottom: 5px;
+        border-radius: 20px;
+}
+
 header nav ul {
     list-style: none;
     margin: 0;
