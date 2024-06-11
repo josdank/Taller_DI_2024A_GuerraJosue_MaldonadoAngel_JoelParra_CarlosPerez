@@ -60,6 +60,9 @@ nav ul li a {
 .buttons {
     margin-top: 20px;
 }
+.buttons footer-column{
+    margin-top: 20px;
+}
 
 .buy-btn, .view-btn {
     display: inline-block;
