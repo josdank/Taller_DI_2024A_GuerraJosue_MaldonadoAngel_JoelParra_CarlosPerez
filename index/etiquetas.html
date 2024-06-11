@@ -1,0 +1,43 @@
+<!-- ETIQUETAS DE HTML-->
+
+ <!DOCTYPE html>
+
+ <!-- Configurar el documento HTML sea español -->
+ <html lang="es">
+   <head>
+     <!-- Sirve para poder utilizar caracteres especiales y codificación-->
+     <meta charset="UTF-8" />
+     <title>Atributos</title>
+     <style>
+        h1{
+            color: blueviolet;
+        }
+       .prueba {
+         color: red;
+       }
+     </style>
+   </head>
+   <body>
+    <h1>JOSUÉ GUERRA</h1>
+     <h1>Atributos en las etiquetas </h1>
+     <input type="checkbox" name="vehiculo" checked>Vehículo</input>
+     <input type="checkbox" name="moto" >Moto</input>
+ <h1>Atributos globales </h1>
+     <p class="prueba">Tipos de etiquetas</p>
+     <p class="prueba" id="parrafo-2">Identificador a través de un ID</p>
+     <p title="title">Título con tooltip</p>
+     <p class="prueba" id="parrafo-3" 
+        data-id="1234567890" data-user="saul" 
+        data-date-of-birth>Datos pasados en la etiqueta
+    </p>
+ 
+     <script>
+       const dato = document.getElementById("parrafo-2").textContent
+       console.log(dato)
+       const dato2 = document.getElementById("parrafo-3")
+       console.log(dato2.dataset.id)
+       console.log(dato2.dataset.user)
+       console.log(dato2.dataset.dateOfBirth="17-05-2000")
+     </script>
+   </body>
+ </html>
