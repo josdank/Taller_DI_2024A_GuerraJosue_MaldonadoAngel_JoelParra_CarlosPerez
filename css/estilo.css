@@ -42,7 +42,7 @@ nav ul li a {
 
 
 .hero {
-    background-image: url('pexels-bendix-978947.jpg');
+    background-image: url('../img/pexels-bendix-978947.jpg');
     background-size: cover; 
     height: 70vh;
     display: flex;
