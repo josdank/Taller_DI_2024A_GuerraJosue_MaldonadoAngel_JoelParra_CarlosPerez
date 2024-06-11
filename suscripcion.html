@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quejas y Reclamos</title>
+    <link rel="stylesheet" href="css/suscrito.css">
+</head>
+<body>
+    <div class="container">
+        <div class="contact-info">
+            <h2>INFORMACION DE CONTACTO</h2>
+            <p>doggift@example.com</p>
+            <p>+593 0983003602</p>
+            <div class="contact-info img">
+                <img src="img/pexels-blue-bird-7210628.jpg" alt="Contacto_referencia">
+            </div>
+        </div>
+        <div class="form-container">
+            <h2>Envia un mensaje</h2>
+            <form id="contactForm">
+                <label for="nombre">Nombres *</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="telefono">Telefono / Celular</label>
+                <input type="tel" id="telefono" name="telefono">
+                <button type="submit">Enviar </button>
+            </form>
+        </div>
+    </div>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Gracias por Suscribirse.</p>
+            <a href="https://wa.me/5930964030442" class="whatsapp-button" target="_blank"> También puede Chatear con nosotros en WhatsApp</a>
+            <p><h5>para regresar a la página principal puede dar click fuera de esta ventana</h5></p>
+        </div>
+    </div>
+
+    <script>
+
+        var modal = document.getElementById("myModal");
+
+        var span = document.getElementsByClassName("close")[0];
+
+        document.getElementById("contactForm").onsubmit = function(event) {
+            event.preventDefault();
+            modal.style.display = "block";
+            setTimeout(function() {
+                window.location.href = "producto.html"; 
+            }, 5000); 
+        };
+        span.onclick = function() {
+            modal.style.display = "none";
+            window.location.href = "producto.html"; 
+        };
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+                window.location.href = "producto.html"; 
+            }
+        };
+    </script>
+</body>
+</html>
