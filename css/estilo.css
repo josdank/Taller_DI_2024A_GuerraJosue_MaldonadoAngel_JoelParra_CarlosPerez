@@ -147,3 +147,121 @@ nav ul li a {
     border: none;
     border-radius: 5px;
 }
+
+
+.containercp {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.sectioncp {
+    text-align: center;
+    padding: 40px 20px;
+}
+.sectioncp h1 {
+    margin-bottom: 10px;
+}
+.sectioncp p {
+    margin-bottom: 30px;
+}
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.gallery img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.testimonials {
+    padding: 40px 20px;
+    text-align: left;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.testimonial {
+    background-color: #FDD9B9;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 45%;
+    margin: 10px 0;
+}
+.testimonial p {
+    font-style: italic;
+}
+.testimonial h4 {
+    margin-top: 10px;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+.footer-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+.footer-item {
+    padding: 10px;
+}
+.footer-phone {
+    padding: 10px;
+    text-align: left;
+    margin-left: 400px;
+}
+.footer-phone h4 {
+    text-align: left;
+}
+.footer-pasarela {
+    align-items: left;
+    margin: 0px;
+}
+
+.footer-item p, .footer-item form {
+    margin: 0;
+}
+.footer-pasarela input[type="email"] {
+    width: 70%;
+    padding: 5px;
+    margin-right: 5px;
+}
+.footer-pasarela button {
+    padding: 5px 10px;
+    background-color: orange;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+.social a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+.footer-bottom {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #222;
+}
